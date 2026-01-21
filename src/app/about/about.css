@@ -1,0 +1,178 @@
+:root, .main {
+    --primary-purple: #7b42f6;
+    --bg-light: #f8f9fd;
+    --card-border: #f1f3f5;
+    --text-dark: #333;
+    --priority-red: #ffedf0;
+    --priority-text: #ff5c75;
+}
+
+body ,.main {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root, .navbar {
+    --primary-purple: #7b42f6;
+    --bg-light: #f8f9fd;
+    --card-border: #f1f3f5;
+    --text-dark: #333;
+    --priority-red: #ffedf0;
+    --priority-text: #ff5c75;
+}
+
+body,.navbar {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.custom-nav {
+    background-color: var(--primary-purple);
+    padding: 12px 20px;
+}
+
+.add-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+}
+/* Modal Styling */
+.custom-modal {
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Input Fields Styling */
+.custom-input {
+    border-radius: 10px;
+    border: 1.5px solid #e2e8f0;
+    padding: 10px 15px;
+}
+
+.custom-input:focus {
+    border-color: #7b42f6;
+    box-shadow: 0 0 0 3px rgba(123, 66, 246, 0.15);
+}
+
+.custom-input::placeholder {
+    color: #cbd5e0;
+}
+
+/* Button Styling */
+.btn-cancel {
+    background-color: #f8fafc;
+    color: #4a5568;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-cancel:hover {
+    background-color: #edf2f7;
+}
+
+.btn-add {
+    background-color: #4f46e5; /* The specific blue/purple in the screenshot */
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
+.btn-add:hover {
+    background-color: #4338ca;
+    color: white;
+}
+
+/* Form Label Icons */
+.form-label i {
+    font-size: 0.9rem;
+}
+
+
+
+/* Kanban Columns */
+.kanban-column {
+    background: white;
+    border-radius: 15px;
+    min-height: 80vh;
+    border: 1px solid var(--card-border);
+}
+
+.icon-box {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-icon { background: #eef2ff; color: #6366f1; }
+.progress-icon { background: #fffbeb; color: #f59e0b; }
+.done-icon { background: #ecfdf5; color: #10b981; }
+
+/* Task Cards */
+.task-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.badge-priority {
+    background-color: var(--priority-red);
+    color: var(--priority-text);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.badge-medium-priority {
+    background-color: lightgreen;
+    color: green;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.badge-low-priority {
+    background-color:lightyellow;
+    color: yellow;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+/* Buttons */
+.btn-start {
+    background-color: #fff4e5;
+    color: #f0932b;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.btn-complete {
+    background-color: #e6f7ef;
+    color: #27ae60;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* Empty State */
+.empty-state {
+    color: #cbd5e0;
+}
+.empty-state i {
+    font-size: 40px;
+}
